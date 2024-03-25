@@ -1,0 +1,1054 @@
+/*
+  Home 1 : Welcome Section
+------------------------------*/
+.welcome-area--l1 {
+    padding-top: 180px;
+    padding-bottom: 55px;
+
+    @include mobile-lg {
+        padding-top: 273px;
+    }
+
+    @include tablet {
+        padding-top: 270px;
+        padding-bottom: 60px;
+    }
+
+    @include desktops {
+        padding-top: 210px;
+        padding-bottom: 130px;
+    }
+
+    @include large-desktops {
+        padding-top: 140px;
+        padding-bottom: 100px;
+    }
+
+    @include large-desktops-mid {
+        padding-top: 216px;
+        padding-bottom: 187px;
+    }
+
+    .newsletter-form {
+        max-width: 521px;
+    }
+}
+
+/* Welcome content */
+
+.welcome-content--l1 {
+    margin-top: 80px;
+
+    @include desktops {
+        margin-top: 0;
+    }
+}
+
+.welcome-content {
+    &__title {
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        line-height: 1.075;
+        margin-bottom: 35px;
+
+        @include mobile {
+            font-size: 60px;
+        }
+
+        @include tablet {
+            font-size: 70px;
+        }
+
+        @include desktops {
+            font-size: 80px;
+        }
+    }
+
+    &__descriptions {
+        color: rgba(38, 39, 41, 0.7);
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 34px;
+        margin-bottom: 53px;
+
+        @include mobile {
+            // padding-right: 75px;
+        }
+
+        @include tablet {
+            // padding-right: 25px;
+        }
+
+        @include desktops {
+            // padding-right: 80px;
+            font-size: 21px;
+        }
+
+        @include large-desktops {
+            // padding-right: 150px;
+        }
+    }
+
+    &__terms-text {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 28px;
+        margin-top: 18px;
+        margin-bottom: 0;
+    }
+}
+
+.welcome-image-group-wrapper {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include desktops {
+        position: absolute;
+        top: 55%;
+        right: 2%;
+        transform: translateY(-50%);
+        width: 46%;
+    }
+
+    @include brk-point(1368px) {
+        width: 46% !important;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @include large-desktops-mid {
+        width: 40%;
+        right: 5%;
+        top: 55%;
+    }
+}
+
+.welcome-image--group-01 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+
+    img {
+        width: 110%;
+    }
+
+    @include desktops {
+        margin-left: auto;
+        width: 80%;
+    }
+
+    @include large-desktops {
+        margin-left: auto;
+        width: 90%;
+    }
+
+    @include extra-large-desktops {
+        width: 670px;
+        object-fit: contain;
+    }
+
+    &__img-1 {
+        position: absolute;
+        left: -2%;
+        top: -7%;
+        width: 28%;
+        box-shadow: 0 44px 54px rgba(37, 55, 63, 0.16);
+        border-radius: 50%;
+    }
+
+    &__img-2 {
+        position: absolute;
+        left: 45%;
+        top: -30%;
+        width: 33%;
+        z-index: -1;
+    }
+
+    &__img-3 {
+        position: absolute;
+        right: 12%;
+        bottom: -12%;
+        width: 28%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    &__img-4 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 23%;
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+
+    &__img-5 {
+        position: absolute;
+        left: 31%;
+        top: -50%;
+        transform: translateX(-50%);
+        width: 24%;
+    }
+
+    &__img-6 {
+        position: absolute;
+        right: -15%;
+        top: 50%;
+        width: 27%;
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+
+    &__img-7 {
+        position: absolute;
+        right: -9%;
+        bottom: -9%;
+        width: 32%;
+        z-index: -1;
+    }
+}
+
+/*
+  Home 2 : Welcome Section
+------------------------------*/
+.welcome-area--l2 {
+    padding-top: 100px;
+    padding-bottom: 0;
+    position: relative;
+
+    @include tablet {
+        padding-top: 140px;
+        padding-bottom: 0;
+    }
+
+    @include desktops {
+        padding-top: 150px;
+        padding-bottom: 0;
+    }
+
+    @include large-desktops {
+        padding-top: 170px;
+        padding-bottom: 0;
+    }
+
+    @include large-desktops-mid {
+        padding-top: 160px;
+        padding-bottom: 0;
+    }
+
+    &-shape-1 {
+        position: absolute;
+        right: -3.5%;
+        bottom: 35%;
+        z-index: 0;
+        width: 9.7%;
+    }
+
+    &-shape-2 {
+        position: absolute;
+        left: -4%;
+        bottom: 20%;
+        z-index: 0;
+        width: 10%;
+    }
+}
+
+.welcome-content--l2 {
+    margin-bottom: 35px;
+
+    &__heading {
+        font-weight: 500;
+        letter-spacing: -2px;
+        line-height: 1.1;
+        font-size: 40px;
+        margin-bottom: 25px;
+        z-index: 1;
+        position: relative;
+
+        @include mobile {
+            font-size: 50px;
+        }
+
+        @include tablet {
+            font-size: 60px;
+        }
+
+        @include desktops {
+            font-size: 70px;
+        }
+    }
+
+    &__descriptions {
+        color: var(--color-texts-3);
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 34px;
+
+        @include tablet {
+            font-size: 21px;
+        }
+    }
+
+    &-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        width: 18.5%;
+
+        @include tablet {
+            left: 5%;
+            top: -5%;
+        }
+
+        @include desktops {
+            left: 6%;
+            top: -22%;
+        }
+    }
+}
+
+.welcome-image--l2 {
+    margin-top: 50px;
+
+    @include desktops {
+        margin-top: 70px;
+    }
+}
+
+/*
+  Home 3 : Welcome Section
+------------------------------*/
+.welcome-area--l3 {
+    padding-top: 125px;
+    position: relative;
+
+    @include tablet {
+        padding-top: 115px;
+        padding-bottom: 38px;
+    }
+
+    @include desktops {
+        padding-top: 185px;
+        padding-bottom: 80px;
+    }
+
+    @include large-desktops {
+        padding-top: 220px;
+        padding-bottom: 180px;
+    }
+}
+
+.welcome-content--l3 {
+    margin-bottom: 40px;
+    margin-top: 0;
+
+    @include tablet {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    @include desktops {
+        margin-top: 0;
+    }
+
+    &__sub-title {
+        color: #ff5722;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.75;
+
+        @include desktops {
+            margin-bottom: 28px;
+        }
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 1.2068;
+        margin-bottom: 21px;
+
+        @include tablet {
+            font-size: 48px;
+        }
+
+        @include desktops {
+            font-size: 58px;
+        }
+    }
+
+    &__descriptions {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 1.875;
+        margin-bottom: 10px;
+    }
+
+    .welcome-btn-group--l3 {
+        padding-top: 15px;
+        margin-bottom: -20px;
+
+        @include desktops {
+            padding-top: 28px;
+        }
+
+        .btn {
+            margin-bottom: 20px;
+
+            &--lg-2 {
+                min-width: 120px;
+                height: 50px;
+
+                @include mobile {
+                    min-width: 180px;
+                    height: 56px;
+                }
+            }
+        }
+    }
+}
+
+.welcome-image-group-wrapper--l3 {
+    position: relative;
+    width: 100%;
+
+    @include tablet {
+        position: absolute;
+        width: 20%;
+        bottom: 0;
+        right: 11%;
+    }
+
+    @include desktops {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: -10%;
+    }
+
+    @include large-desktops {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        max-width: 543px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 695px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 815px;
+    }
+}
+
+.welcome-image-group--l3 {
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+        max-width: 350px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        max-width: 450px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        max-width: 525px;
+    }
+
+    &__img-1 {
+        position: absolute;
+        right: -55%;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__img-2 {
+        position: absolute;
+        left: 83%;
+        top: 35%;
+        width: 20%;
+        z-index: -1;
+
+        @include media-breakpoint-up(xl) {
+            max-width: 500px;
+        }
+    }
+
+    &__img-3 {
+        position: absolute;
+        left: -10%;
+        bottom: 8%;
+        width: 61%;
+        z-index: 1;
+
+        @include media-breakpoint-up(xl) {
+            max-width: 500px;
+        }
+    }
+}
+
+/*
+  Home 4 : Welcome Section
+------------------------------*/
+
+.welcome-area--l4 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center ;
+    z-index: 1;
+    &::before{
+        content: "";
+        background-image: url("../image/home-4/hero-overlay.png");
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    @include mobile {
+        padding-top: 120px;
+    }
+
+    @include tablet {
+        padding-top: 105px;
+        padding-bottom: 34px;
+    }
+
+    @include desktops {
+        padding-top: 150px;
+        padding-bottom: 59px;
+    }
+
+    @include large-desktops {
+        padding-top: 200px;
+        padding-bottom: 107px;
+    }
+
+    @include extra-large-desktops {
+        padding-top: 290px;
+        padding-bottom: 187px;
+    }
+    .welcome-content{
+        z-index: 9;
+    }
+    .newsletter--l4{
+        margin-top: 40px;
+        max-width: 522px;
+    }
+}
+
+// .welcome-image-group-wrapper--l4 {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     object-fit: cover;
+
+//     @include desktops {
+//         position: absolute;
+//         right: 0;
+//         bottom: 0;
+//         width: 50%;
+//         height: 100%;
+//     }
+
+//     @include large-desktops {
+//         right: 0;
+//         width: 50%;
+//         bottom: 0;
+//     }
+
+//     @include extra-large-desktops {
+//         width: 890px;
+//         bottom: -5%;
+//     }
+
+//     .welcome-image-group--l4 {
+//         width: 100%;
+//         height: 100%;
+//         background-repeat: no-repeat;
+//         min-height: 320px;
+//         object-fit: cover;
+//         background-size: contain;
+//         object-position: right;
+//         margin: 0 auto;
+//         margin-bottom: 30px;
+//         background-position: bottom right;
+
+//         @include mobile {
+//             min-height: 520px;
+//         }
+
+//         @include tablet {
+//             margin-bottom: 0;
+//         }
+
+//         @include desktops {
+//             background-size: fill;
+//             margin: 0;
+//         }
+//     }
+// }
+
+/*
+  Home 5 : Welcome Section
+------------------------------*/
+
+.welcome-area--l5 {
+    padding-top: 130px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    z-index: 0;
+
+    @include tablet {
+        padding-top: 115px;
+        padding-bottom: 60px;
+    }
+
+    @include desktops {
+        padding-top: 205px;
+        padding-bottom: 130px;
+    }
+    @include large-desktops {
+        padding-top: 235px;
+        padding-bottom: 220px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../image/home-5/hero-bg-overlay.png);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .welcome-content--l3__sub-title {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 26px;
+    }
+
+    .popup-btn {
+        display: flex;
+        align-items: center;
+
+        .play-btn {
+            min-width: 50px;
+            max-width: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            box-shadow: -12px 12px 50px rgba(255, 30, 56, 0.3);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            margin-right: 20px;
+        }
+
+        .btn-text {
+            color: $primary;
+            transition: 0.4s;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 22px;
+        }
+
+        &:hover {
+            .btn-text {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+/*
+  Home 6 : Welcome Section
+------------------------------*/
+
+.welcome-area--l6 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    z-index: 0;
+
+    @include tablet {
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+
+    @include desktops {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+}
+
+/*
+  Home 7 : Welcome Section
+------------------------------*/
+.welcome-area--l7 {
+    padding-top: 125px;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: right top;
+    position: relative;
+    z-index: 0;
+
+    @include tablet {
+        padding-top: 145px;
+        padding-bottom: 80px;
+    }
+
+    @include desktops {
+        padding-top: 260px;
+        padding-bottom: 195px;
+    }
+
+    z-index: 0;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(261.26deg, rgba(253, 52, 110, 0.96) 14.9%, #b81c5c 43.58%, #0abfbc 89.94%);
+        opacity: 0.7;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .welcome-area___content {
+        z-index: 1;
+    }
+
+    &__icon {
+        min-width: 66px;
+        max-width: 66px;
+        min-height: 66px;
+        max-height: 66px;
+        border-radius: 50%;
+        box-shadow: -12px 12px 50px rgba(253, 52, 110, 0.3);
+        background-color: #fff;
+        display: inline-flex;
+        align-items: center;
+        color: $readical-red;
+        justify-content: center;
+        margin-bottom: 38px;
+        font-size: 21px;
+    }
+
+    &__heading {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 25px;
+
+        @include mobile {
+            font-size: 40px;
+        }
+
+        @include tablet {
+            font-size: 50px;
+        }
+
+        @include desktops {
+            font-size: 60px;
+        }
+    }
+
+    &__descriptions {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.619;
+        margin-bottom: 55px;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include desktops {
+            font-size: 21px;
+        }
+    }
+}
+
+/*
+  Home 8 : Welcome Section
+------------------------------*/
+
+.welcome-area--l8 {
+    background-color: rgba($java, 0.2);
+    padding-top: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @include desktops {
+        padding-top: 110px;
+        padding-bottom: 0px;
+    }
+
+    @include extra-large-desktops {
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+
+        &--lg-2 {
+            min-width: 120px;
+            height: 50px;
+
+            @include mobile {
+                min-width: 180px;
+                height: 56px;
+            }
+        }
+    }
+}
+
+.hero-img {
+    margin-top: -60px;
+    margin-bottom: 70px;
+
+    @include desktops {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hero-l8-img-group {
+        position: relative;
+        margin-left: -50px;
+
+        @include mobile {
+            margin-left: -100px;
+        }
+
+        @include desktops {
+            margin-bottom: 0;
+        }
+
+        &__1 {
+            position: relative;
+            width: 95%;
+            bottom: -80px;
+
+            @include desktops {
+                bottom: -110px;
+            }
+        }
+
+        &__2 {
+            width: 50%;
+        }
+    }
+}
+
+.welcome-content--l8 {
+    @include desktops {
+        padding-bottom: 100px;
+    }
+
+    @include extra-large-desktops {
+        padding-bottom: 0;
+    }
+
+    &__sub-title {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 1.2068;
+        margin-bottom: 21px;
+        margin-bottom: 30px;
+
+        @include tablet {
+            font-size: 48px;
+        }
+
+        @include desktops {
+            font-size: 60px;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 72px;
+            color: $shark;
+        }
+    }
+
+    &__descriptions {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin-bottom: 10px;
+        color: rgba($shark, 0.7);
+    }
+
+    .welcome-btn-group--l8 {
+        padding-top: 28px;
+        margin-bottom: -20px;
+
+        .btn {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/*
+  Home 9 : Welcome Section
+------------------------------*/
+.welcome-area--l9 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include desktops {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+
+    .welcome-content {
+        margin-top: 30px;
+
+        @include desktops {
+            margin-top: 0;
+        }
+
+        &__heading {
+            font-size: 35px;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 1.2;
+            margin-bottom: 25px;
+
+            @include mobile {
+                font-size: 40px;
+            }
+
+            @include tablet {
+                font-size: 50px;
+            }
+
+            @include desktops {
+                font-size: 60px;
+            }
+        }
+
+        &__sub-heading {
+            font-size: 21px;
+            font-weight: 500;
+            font-style: italic;
+            letter-spacing: normal;
+            line-height: 1.4285;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 30px;
+            margin-bottom: 0;
+        }
+
+        .welcome-btn-group {
+            margin-top: 45px;
+
+            .btn {
+                &--lg-2 {
+                    min-width: 120px;
+                    height: 50px;
+
+                    @include mobile {
+                        min-width: 180px;
+                        height: 56px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.welcome-img--l9 {
+    &.video-box {
+        box-shadow: 0 10px 56px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+
+        @include desktops {
+            margin-left: 30px;
+        }
+
+        @include extra-large-desktops {
+            margin-left: 67px !important;
+        }
+
+        .video-btn {
+            min-width: 60px;
+            max-width: 60px;
+            min-height: 60px;
+            max-height: 60px;
+        }
+    }
+}

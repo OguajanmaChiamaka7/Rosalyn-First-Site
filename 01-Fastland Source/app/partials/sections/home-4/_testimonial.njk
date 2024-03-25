@@ -1,0 +1,29 @@
+{% macro render(options) %}
+    {% import "components/Cards/cards.njk" as Card %}
+    <div class="testimonial-section testimonial-section--l4 bg-default-3{{options.classes}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-9 col-xxl-7">
+                    <div class="section-title section-title--l4">
+                        <h6 class="section-title__sub-heading text-torch-red">Testimonial</h6>
+                        <h2 class="section-title__heading mb-4">Don’t Just Take Our Words For It</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center testimonial-slider--l4">
+                {% for data in options.testimonialTwoData %}
+                    <div class="col-lg-3 col-md-12">
+                        {{Card.testimonialTwo(
+                        {
+                        "image"    : data.image, 
+                        "userName" : data.userName, 
+                        "userPosition" : data.userPosition,
+                        "description":data.description
+                        }
+                    )}}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,30 @@
+{% macro render(options) %}
+{% import "components/_widgets.njk" as widGets %}
+<div class="content-section content-section--l3-2 bg-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title section-title--l3 text-center">
+                    <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Our Process</h6>
+                    <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Digital system for your company</h2>
+                </div>
+            </div>
+        </div>
+        <div class="widgets widgets-content--l3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+            <div class="row justify-content-center">
+                {% for data in options.contentWidgetsData %}
+                <div class="col-lg-4 col-md-6 col-xs-6 single-widget">
+                    {{widGets.contentWidget(
+                        {
+                        "color"       : data.color, 
+                        "counter"       : data.counter, 
+                        "title"       : data.title
+                        }
+                    )}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,35 @@
+{% macro render(options) %}
+  {% import "components/_counter.njk" as Counter %}
+  <div class="about-us-section about-us-section--l4 bg-default">
+    <div class="container">
+      <!-- about-us Content -->
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-5 col-lg-6 col-md-7 col-xs-8">
+          <div class="about-us__image-group-l4">
+            <img class="w-100" src="./image/home-4/about-us-image-l4-1.png" alt=""/>
+            <div class="about-us__image-group-l4__img-1">
+              <img class="w-100" src="./image/home-4/about-us-image-l4-2.png" alt=""/>
+            </div>  
+          </div>
+        </div>
+        <div class="col-xl-5 offset-xl-2 col-lg-6 col-md-9 col-sm-11">
+          <div class="about-us-right">
+            <div class="section-title section-title--l4">
+               <h6 class="section-title__sub-heading text-electric-violet-3">About us</h6>
+                <h2 class="section-title__heading mb-4">We Are The Leader<br class="d-none d-xs-block"> in Web Design</h2>
+                <p class="section-title__description">A powerful web design is the one where the user is encouraged<br class="d-none d-sm-block d-lg-none d-xxl-block"> to stay on the site and not bounce to some other  simple tips<br class="d-none d-sm-block d-lg-none d-xxl-block"> that will improve the bounce rate tremendously.</p>
+                <p class="section-title__description">If a website accomplishes its goals and works well, then igood<br class="d-none d-sm-block d-lg-none d-xxl-block"> web design. This might mean different things for each website,<br class="d-none d-sm-block d-lg-none d-xxl-block"> but all good web design will have certain things in common.</p>
+            </div>
+
+            <!--Counter Bar -->
+            <div class="about-us-counter about-us-counter--l4">
+              {{ Counter.counterTwo() }}
+            </div>
+            <!--/ .Counter Bar -->
+          </div>
+        </div>
+      </div>
+      <!--/ .about-us Content -->
+    </div>
+  </div>
+{% endmacro %}

@@ -1,0 +1,54 @@
+.error-page {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    @include tablet{
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+    @include desktops{
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
+    &__image{
+        padding: 0 30px;
+    }
+    &__code {
+        font-size: 50px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: -2px;
+        line-height: 1.27272;
+        color: $readical-red;
+        margin-bottom: 0;
+        @include mobile-lg{
+            font-size: 60px;
+        }
+        @include tablet{
+            font-size: 80px;
+        }
+        @include desktops{
+            font-size: 110px;
+        }
+    }
+    &__heading {
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        @include tablet{
+            font-size: 35px;
+        }
+        @include desktops{
+            font-size: 45px;
+        }
+    }
+    &__text{
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 1.777777;
+        margin-bottom: 33px;
+    }
+}

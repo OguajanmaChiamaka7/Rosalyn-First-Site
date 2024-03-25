@@ -1,0 +1,78 @@
+.comments-area {
+    padding-top: 60px;
+    @include tablet {
+        padding-top: 80px;
+    }
+    @include desktops {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+}
+.comment-meta-box {
+    margin-bottom: 33px;
+    &__author-img {
+        margin-right: 40px;
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    &__name {
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: var(--color-headings-2);
+        margin-bottom: 0;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 32px;
+        color: var(--color-texts-3);
+    }
+    &__date,
+    &__time {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 30px;
+        color: var(--color-texts-3);
+    }
+    &__reply-btn {
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 28px;
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+.sub-comment-meta-box {
+    margin-left: 125px;
+}
+
+.comments-form {
+    margin-bottom: 60px;
+    .section-title {
+        &__heading {
+            font-size: 36px;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 54px;
+        }
+    }
+    .form-check {
+        margin-top: 40px;
+        margin-bottom: 45px;
+        .form-check-label {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 30px;
+            color: var(--color-headings-2);
+        }
+    }
+}

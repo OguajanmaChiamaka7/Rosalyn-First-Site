@@ -1,0 +1,199 @@
+{% extends "template.njk" %}
+
+{#
+<!-- Page Section Import Here --> #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import 'sections/home-4/_hero.njk' as heroOne %}
+{% import 'sections/home-4/_services-area.njk' as serVices %}
+{% import 'sections/home-4/_content-1.njk' as contentOne %}
+{% import 'sections/home-4/_about-us.njk' as aboutUs %}
+{% import 'sections/home-4/_content-2.njk' as contentTwo %}
+{% import 'sections/home-4/_promo.njk' as promo %}
+{% import 'sections/home-4/_pricing-table.njk' as pricingTable %}
+{% import 'sections/home-4/_testimonial.njk' as testimonialSection %}
+{% import 'sections/home-4/_contact.njk' as contact %}
+{% import 'components/footer/_footer-4.njk' as footer%}
+
+{% block main %}
+<!-- Clean The Code And Hop in -->
+
+<!-- Header Area -->
+{{Header.render({
+"hideMegamenu": false,
+"additional_header_class": "site-header--menu-center dark-mode-texts dynamic-sticky-bg mt-3 mt-lg-0",
+"absolute_header": true,
+"container_fluid": false,
+"sticky_header": true,
+"mobile_sticky": false,
+"menu_wrapper_class" : "menu-sep-left",
+"header_double_button": false,
+"header_button": true,
+"header_button_text": "Purchase",
+"header_button_class": "btn btn-electric-violet-2 btn--header-inner text-white rounded-50 shadow--electric-violet-2-4 ms-auto ms-lg-4 d-none d-sm-flex"
+
+})}}
+<!--/ .Header Area -->
+
+<!-- Hero Area -->
+{{heroOne.render()}}
+<!--/ .Hero Area -->
+
+<!-- Services Area -->
+
+{{serVices.render({
+"servicesCard" : [
+{
+"color" : "java-2",
+"icon" : "fas fa-envelope",
+"heading" : "Product Management"
+},
+{
+"color" : "victoria",
+"icon" : "fas fa-layer-group",
+"heading" : "Web & Mobile Development"
+},
+{
+"color" : "dodger-blue",
+"icon" : "fas fa-headphones",
+"heading" : "Customer Support"
+},
+{
+"color" : "primary",
+"icon" : "fas fa-bell",
+"heading" : "Human Resources"
+},
+{
+"color" : "dodger-blue",
+"icon" : "fas fa-file-invoice",
+"heading" : "Design & vreatives"
+},
+{
+"color" : "caribbean-green",
+"icon" : "fas fa-chart-pie",
+"heading" : "Marketing & Commuication"
+},
+{
+"color" : "yellow",
+"icon" : "fas fa-money-bill-alt",
+"heading" : "Business Development"
+}
+]
+
+})}}
+<!--/ .Services Area -->
+
+<!-- Feature Area -->
+{{aboutUs.render()}}
+<!--/ .Feature Area -->
+
+<!-- Content One Area -->
+{{contentOne.render(
+{
+"contentOneData" : [
+{
+"icon" : "fa fa-rocket",
+"heading" : "Fast Working Process"
+
+},
+{
+"icon" : "fa fa-hammer",
+"heading" : "Dedicated Team"
+
+},
+{
+"icon" : "fa fa-hourglass",
+"heading" : "24/7 Hours Support"
+
+}
+
+]
+}
+
+)}}
+<!--/ .Content One Area -->
+
+<!-- Content Two Area -->
+{{contentTwo.render({
+"contentWidgetsthreeData" : [
+{
+"additional_classes" : "active",
+"color" : "white",
+"counter" : "1",
+"title" : "Advice for Mining"
+},
+{
+"color" : "white",
+"counter" : "2",
+"title" : "Amazing Partners"
+},
+{
+"color" : "white",
+"counter" : "3",
+"title" : "Finalize & Publish"
+}
+
+]
+
+})}}
+<!--/ .Content Two Area -->
+
+<!-- promo Area -->
+{{promo.render()}}
+<!--/ .promo Area -->
+
+<!-- Pricing Table Area -->
+{{pricingTable.render()}}
+<!--/ .Pricing Table Area -->
+
+<!-- Testimonial Area -->
+{{testimonialSection.render({
+"testimonialTwoData" : [
+{
+"image" : "./image/home-4/user-img-1.png",
+"userName" : "Charles Patterson",
+"description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam
+erat, sed dlam voluptua.",
+"userPosition" : "One year with us"
+},
+{
+"image" : "./image/home-3/user-circle-1.png",
+"userName" : "John Doe",
+"description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam
+erat, sed dlam voluptua.",
+"userPosition" : "One year with us"
+},
+{
+"image" : "./image/home-3/user-circle-2.png",
+"userName" : "Tiana Dokidis",
+"description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam
+erat, sed dlam voluptua.",
+"userPosition" : "One year with us"
+},
+{
+"image" : "./image/home-3/user-circle-3.png",
+"userName" : "Tiana Dokidis",
+"description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam
+erat, sed dlam voluptua.",
+"userPosition" : "One year with us"
+},
+{
+"image" : "./image/home-3/user-circle-1.png",
+"userName" : "Talan Bergson",
+"description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam
+erat, sed dlam voluptua.",
+"userPosition" : "CEO, Greener"
+}
+]
+
+})}}
+<!--/ .Testimonial Area -->
+
+<!-- contact Area -->
+{{contact.render()}}
+<!--/ .contact Area -->
+
+<!-- Footer Area -->
+{{footer.render()}}
+<!--/ .Footer Area -->
+
+{% endblock %}

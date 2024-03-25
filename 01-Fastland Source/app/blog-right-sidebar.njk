@@ -1,0 +1,55 @@
+{% extends "template.njk" %}
+
+{# <!-- Page Section Import Here -->  #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import "sections/innerpage/_sidebar.njk" as sideBar %}
+{% import "sections/innerpage/_blogs.njk" as blogs %}
+{% import "sections/innerpage/_comments.njk" as commentsSection %}
+{% import 'components/footer/_footer-inner-1.njk' as footer%}
+
+{% block main %}
+  <!-- Clean The Code And Hop in -->
+
+  <!-- Header Area -->
+  {{Header.render({
+    "hideMegamenu": false,
+    "megamenuPosition" : "left menu-block-3",
+    "additional_header_class": "site-header--menu-right mt-2 mb-4 mt-lg-0 mb-lg-0 bg-default",
+    "absolute_header": false,
+    "container_fluid": false,
+    "sticky_header": false,
+    "mobile_sticky": false,
+    "menu_wrapper_class" : "ms-5 menu-sep-right",
+    "header_button" : true,
+    "header_button_text" : "Purchase",
+    "header_button_class" : "btn btn-electric-violet-2 btn--header-inner rounded-50 text-white shadow--electric-violet-2-4 ms-2 d-none d-lg-block"
+
+    })}}
+  <!--/ .Header Area -->
+  
+  <div class="blogs-area blogs-area--right-sidebar bg-default-6">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <div class="section-title section-title--innerpage text-center">
+            <h5 class="section-title__sub-heading text-electric-violet-2">Latest posts</h5>
+            <h2 class="section-title__heading">Blog Right Sidebar</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-7">
+         {{blogs.render()}}
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-7 col-xs-10 mt-5 mt-lg-0">
+          {{sideBar.render()}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Area -->
+  {{footer.render()}}
+  <!--/ .Footer Area -->
+
+{% endblock %}

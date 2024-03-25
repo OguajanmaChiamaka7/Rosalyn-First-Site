@@ -1,0 +1,32 @@
+{% macro render(options) %}
+    {% import "components/Cards/cards.njk" as Card %}
+    <div class="testimonial-section testimonial-section--l8 bg-default-5{{options.classes}}">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-xl-9 col-xxl-7">
+                    <div class="section-title section-title--l8 text-center text-lg-start">
+                        <h6 class="section-title__sub-heading text-bittersweet" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Testimonial</h6>
+                        <h2 class="section-title__heading mb-0" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">Don’t Just Take Our Words For It</h2>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-3 col-lg-4 text-center text-lg-end ">
+                    <div class="testimonial-btn mb-6 mb-lg-0"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center testimonial-slider--l8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" data-aos-once="true">
+                {% for data in options.testimonialTwoData %}
+                    <div class="col-lg-4 col-md-12">
+                        {{Card.testimonialTwo(
+                        {
+                        "image"    : data.image, 
+                        "userName" : data.userName, 
+                        "userPosition" : data.userPosition,
+                        "description":data.description
+                        }
+                    )}}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

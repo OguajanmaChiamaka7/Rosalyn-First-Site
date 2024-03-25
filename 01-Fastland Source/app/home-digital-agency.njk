@@ -1,0 +1,175 @@
+{% extends "template.njk" %}
+
+{# <!-- Page Section Import Here -->  #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import 'sections/home-6/_hero.njk' as heroOne %}
+{% import 'sections/home-6/_services-area.njk' as serVices %}
+{% import 'sections/home-6/_about-us.njk' as aboutUs %}
+{% import 'sections/home-6/_content-1.njk' as contentOne %}
+{% import 'sections/home-6/_content-2.njk' as contentTwo %}
+{% import 'sections/home-6/_portfolio.njk' as portfolioArea %}
+{% import 'sections/home-6/_testimonial.njk' as testimonialSection %}
+{% import 'sections/home-6/_promo.njk' as promo %}
+{% import 'components/footer/_footer-7.njk' as footer%}
+
+{% block main %}
+  <!-- Clean The Code And Hop in -->
+
+  <!-- Header Area -->
+  {{Header.render({
+"hideMegamenu": false,
+"megamenuPosition" : "left",
+"additional_header_class": "site-header--menu-right dynamic-sticky-bg mt-3 mt-lg-0 dark-mode-texts",
+"absolute_header": true,
+"container_fluid": false,
+"sticky_header": true,
+"mobile_sticky": false,
+"menu_wrapper_class" : "ms-4",
+"header_button" : true,
+"header_button_text" : "Free SEO Analysis",
+"header_button_class" : "btn btn-egg-blue btn--btn-header-7 rounded-50 text-white shadow--egg-blue-2 ms-lg-4 ms-auto d-none d-sm-flex"
+
+})}}
+  <!--/ .Header Area -->
+
+  <!-- Hero Area -->
+  {{heroOne.render()}}
+  <!--/ .Hero Area -->
+
+  <!-- Services Area -->
+
+  {{serVices.render({
+     "servicesCarddata" : [
+      {   
+        "image" : "./image/home-6/services-icon-1.png",   
+        "heading" : "Website Design & Development",       
+        "text" : "Refresh old out dated website or bring your business online with your first website."       
+      },
+      {   
+        "image" : "./image/home-6/services-icon-2.png",   
+        "heading" : "Search Engine Optimisation (SEO)",       
+        "text" : "Start bringing new visitors to your website with an SEO campaign!"       
+      },
+      {   
+        "image" : "./image/home-6/services-icon-3.png",   
+        "heading" : "Google Ads Management (PPC)",       
+        "text" : "Appear on the top first pages of Google and generate instant traffic to your website."       
+      }
+      
+    ] 
+
+  })}}
+  <!--/ .Services Area -->
+
+
+  <!-- About Us Area -->
+  {{aboutUs.render(
+    {
+      "aboutdataOne" : [
+        {
+          "icon" : "fa fa-book",
+          "title" : "Our Customer",
+          "text" : "Business advisory service advises current and future businesses prospects of a client, with the aim of"
+
+        },
+        {
+          "icon" : "fa fa-book",
+          "title" : "Our Product",
+          "text" : "Business advisory service advises current and future businesses prospects of a client, with the aim of"
+
+        },
+        {
+          "icon" : "fa fa-book",
+          "title" : "Our Services",
+          "text" : "Business advisory service advises current and future businesses prospects of a client, with the aim of"
+
+        }
+
+    ]
+    }
+
+  )}}
+  <!--/ .About Us Area -->
+
+  <!-- Content One Area -->
+   {{contentOne.render({
+    "contentWidgetData" : [
+      {
+        "color" : "readical-red",
+        "icon" : "far fa-envelope",
+        "title" : "Minimal  Design"
+      },
+      {
+        "color" : "readical-red",
+        "icon" : "far fa-envelope",
+        "title" : "Best Material"
+      }
+
+    ]
+
+  })}}
+  <!--/ .Content One Area -->
+
+  <!-- Content Two Area -->
+  {{contentTwo.render()}}
+  <!--/ .Content Two Area -->
+  
+
+  <!-- Testimonial Area -->
+  {{testimonialSection.render({
+     "testimonialTwoData" : [
+      {      
+        "image" : "./image/home-6/team-member-1.png", 
+        "userName" : "Charles Patterson",       
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",
+        "userPosition" : "CEO, Colabrio Media"        
+      },
+      { 
+        "image" : "./image/home-6/team-member-2.png", 
+        "userName" : "John Doe",
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",       
+        "userPosition" : "CEO, Colabrio Media"        
+      },
+      { 
+        "image" : "./image/home-6/team-member-3.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",       
+        "userPosition" : "CEO, Colabrio Media"        
+      },
+      { 
+        "image" : "./image/home-6/team-member-4.png", 
+        "userName" : "Stephan Lawrence",
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",       
+        "userPosition" : "CEO, Colabrio Media"        
+      },
+      { 
+        "image" : "./image/home-6/team-member-3.png", 
+        "userName" : "Stephan Lawrence",
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",       
+        "userPosition" : "CEO, Colabrio Media"        
+      },
+      {
+        "image" : "./image/home-6/team-member-5.png",       
+        "userName" : "Talan Bergson",
+        "description":"consetetur sadipscing elltr, sed dlam nonumy elrmod tempor invidunt ut labore et dolore magna allquyam erat, sed dlam voluptua.",       
+        "userPosition" : "CEO, Greener"        
+      }
+    ]
+
+  })}}
+  <!--/ .Testimonial Area -->
+
+  <!-- Portfolio Area -->
+  {{portfolioArea.render()}}
+  <!--/ .Portfolio Area -->
+  
+  <!-- promo Area -->
+  {{promo.render()}}
+  <!--/ .promo Area -->
+
+  
+  <!-- Footer Area -->
+  {{footer.render()}}
+  <!--/ .Footer Area -->
+
+{% endblock %}

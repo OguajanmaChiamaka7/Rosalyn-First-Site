@@ -1,0 +1,45 @@
+.search-section {
+    background: linear-gradient(261.26deg, rgba(253, 52, 110, 0.96) 14.9%, #b81c5c 43.58%, #0abfbc 89.94%);
+    padding-top: 52px;
+    padding-bottom: 40px;
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 55px;
+    }
+    @include desktops {
+        padding-top: 95px;
+        padding-bottom: 90px;
+    }
+
+    .search-form{
+        @include desktops{
+            margin: 0 30px;
+        }
+    }
+}
+
+.search-content {
+    &__heading {
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        line-height: 1.20689;
+        margin-bottom: 35px;
+        @include mobile-lg {
+            font-size: 38px;
+        }
+        @include tablet {
+            font-size: 48px;
+        }
+        @include desktops {
+            font-size: 58px;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+}

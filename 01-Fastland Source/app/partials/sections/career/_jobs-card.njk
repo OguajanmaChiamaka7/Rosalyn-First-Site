@@ -1,0 +1,79 @@
+{% macro render(options) %}
+<div class="jobs-area bg-default-6">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-xs-8">
+                <div class="jobs-filter">
+                    <h3 class="jobs-filter__title">Department</h3>
+                    <div class="jobs-filter__menu">
+                        <button class="button is-checked" data-filter="*">All</button>
+                        <button class="button" data-filter=".customer-support">Customer Support</button>
+                        <button class="button" data-filter=".marketing">Marketing & Strategy</button>
+                        <button class="button" data-filter=".design">Product Design</button>
+                        <button class="button" data-filter=".development">Development</button>
+                        <button class="button" data-filter=".research">Research & Analysis</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 offset-xl-1 col-lg-9 col-md-12">
+                <div class="jobs-area__tab">
+                    <div class="row justify-content-center grid">
+                        <div class="col-md-6 col-xs-8 grid-item customer-support development">
+                            <div class="card card--single">
+                                <h3 class="card__heading">Product Manager</h3>
+                                <ul class="card__list list-unstyled">
+                                    <li><i class="fa fa-map-marker-alt text-electric-violet-2"></i> South Haven, USA
+                                    </li>
+                                    <li><i class="fa fa-clock text-electric-violet-2"></i> Posted 8 hours ago</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>Full-time</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>91,000 INR</li>
+                                </ul>
+                                <a class="btn btn-outline-primary btn--lg rounded-50" href="#">Apply</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-8 grid-item marketing research">
+                            <div class="card card--single ">
+                                <h3 class="card__heading">Senior Software Engineer</h3>
+                                <ul class="card__list list-unstyled">
+                                    <li><i class="fa fa-map-marker-alt text-electric-violet-2"></i> South Haven, USA
+                                    </li>
+                                    <li><i class="fa fa-clock text-electric-violet-2"></i> Posted 8 hours ago</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>Full-time</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>91,000 INR</li>
+                                </ul>
+                                <a class="btn btn-outline-primary btn--lg rounded-50" href="#">Apply</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-8 grid-item development design">
+                            <div class="card card--single">
+                                <h3 class="card__heading">Q&A Analyst</h3>
+                                <ul class="card__list list-unstyled">
+                                    <li><i class="fa fa-map-marker-alt text-electric-violet-2"></i> South Haven, USA
+                                    </li>
+                                    <li><i class="fa fa-clock text-electric-violet-2"></i> Posted 8 hours ago</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>Full-time</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>91,000 INR</li>
+                                </ul>
+                                <a class="btn btn-outline-primary btn--lg rounded-50" href="#">Apply</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-8 grid-item customer-support design">
+                            <div class="card card--single">
+                                <h3 class="card__heading">UI Designer</h3>
+                                <ul class="card__list list-unstyled">
+                                    <li><i class="fa fa-map-marker-alt text-electric-violet-2"></i> South Haven, USA
+                                    </li>
+                                    <li><i class="fa fa-clock text-electric-violet-2"></i> Posted 8 hours ago</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>Full-time</li>
+                                    <li><i class="fa fa-briefcase text-electric-violet-2"></i>91,000 INR</li>
+                                </ul>
+                                <a class="btn btn-outline-primary btn--lg rounded-50" href="#">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,181 @@
+{% extends "template.njk" %}
+
+{# <!-- Page Section Import Here -->  #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import 'sections/home-3/_hero.njk' as heroOne %}
+{% import 'sections/home-3/_services-area.njk' as serVices %}
+{% import 'sections/home-3/_features-area.njk' as featuresArea %}
+{% import 'sections/home-3/_content-1.njk' as contentOne %}
+{% import 'sections/home-3/_content-2.njk' as contentTwo %}
+{% import 'sections/home-3/_promo.njk' as promo %}
+{% import 'sections/home-3/_testimonial.njk' as testimonialSection %}
+{% import 'sections/home-3/_contact.njk' as contact %}
+{% import 'components/footer/_footer-3.njk' as footer%}
+
+{% block main %}
+  <!-- Clean The Code And Hop in -->
+
+<!-- Header Area -->
+{{Header.render({
+"hideMegamenu": false,
+"megamenuPosition" : "left menu-block-5",
+"additional_header_class": "site-header--menu-left dynamic-sticky-bg light-mode-texts",
+"absolute_header": true,
+"container_fluid": false,
+"sticky_header": true,
+"mobile_sticky": true,
+"menu_wrapper_class" : "menu-sep-left",
+"header_double_button": false,
+"header_button": true,
+"header_button_text": "Purchase",
+"header_button_class": "btn btn-electric-violet-2 rounded-50 ms-lg-2 shadow--electric-violet-2-4 ms-auto text-white d-none d-sm-flex",
+"header_button_custom" : "<ul class=\"menu-social-share d-none d-xl-block menu-sep-right pe-1 list-unstyled\">
+  <li><a href='#'><i class=\"fab fa-instagram text-primary\"></i></a></li>
+  <li><a href='#'><i class=\"fab fa-linkedin text-primary\"></i></a></li>
+  <li><a href='#'><i class=\"fab fa-facebook text-primary\"></i></a></li>
+  <li><a href='#'><i class=\"fab fa-twitter text-primary\"></i></a></li>
+</ul>"
+
+})}}
+<!--/ .Header Area -->
+
+  <!-- Hero Area -->
+  {{heroOne.render()}}
+  <!--/ .Hero Area -->
+
+  <!-- Services Area -->
+  
+  {{serVices.render({
+     "servicesCard" : [
+      {   
+        "color" : "java-2",
+        "icon" : "fas fa-envelope",       
+        "heading" : "Product Management"       
+      },
+      {   
+        "color" : "victoria",
+        "icon" : "fas fa-layer-group",       
+        "heading" : "Web & Mobile <br class='d-xs-block' > Development"       
+      },
+      {   
+        "color" : "dodger-blue",
+        "icon" : "fas fa-headphones",       
+        "heading" : "Customer <br class='d-xs-block' > Support"       
+      },
+      {   
+        "color" : "primary",
+        "icon" : "fas fa-bell",       
+        "heading" : "Human <br class='d-xs-block' > Resources"       
+      },
+      {   
+        "color" : "dodger-blue",
+        "icon" : "fas fa-file-invoice",       
+        "heading" : "Design & <br class='d-xs-block' > vreatives"       
+      },
+      {   
+        "color" : "caribbean-green",
+        "icon" : "fas fa-chart-pie",       
+        "heading" : "Marketing & <br class='d-xs-block' > Commuication"       
+      },
+      {   
+        "color" : "yellow",
+        "icon" : "fas fa-money-bill-alt",       
+        "heading" : "Business <br class='d-xs-block' > Development"       
+      }
+    ] 
+
+  })}}
+  <!--/ .Services Area -->
+
+  <!-- Feature Area -->
+  {{featuresArea.render({
+    "serviceData" : [
+      {
+        "image" : "./image/home-1/l1-services-icon-1.png",       
+        "heading" : "Manage Smartly",       
+        "content" : "Stay on top of your task lists and stay in touch with what's happening"        
+      },
+      {
+        "image" : "./image/home-1/l1-services-icon-2.png",       
+        "heading" : "Communicate Fast",       
+        "content" : "Stay on top of your task lists and stay in touch with what's happening"        
+      },
+      {
+        "image" : "./image/home-1/l1-services-icon-3.png",       
+        "heading" : "Influence Easily",       
+        "content" : "Stay on top of your task lists and stay in touch with what's happening"        
+      }
+    ]
+
+  })}}
+  <!--/ .Feature Area -->
+
+  <!-- Content One Area -->
+  {{contentOne.render()}}
+  <!--/ .Content One Area -->
+
+  <!-- Content Two Area -->
+  {{contentTwo.render({
+    "contentWidgetsData" : [
+      {
+        "color" : "electric-violet-2",
+        "counter" : "1",
+        "title" : "General Concept"
+      },
+      {
+        "color" : "flamingo",
+        "counter" : "2",
+        "title" : "Post Product"
+      },
+      {
+        "color" : "egg-blue",
+        "counter" : "3",
+        "title" : "Design Process"
+      }
+
+    ]
+
+  })}}
+  <!--/ .Content Two Area -->
+
+  <!-- promo Area -->
+  {{promo.render()}}
+  <!--/ .promo Area -->
+
+    <!-- Testimonial Area -->
+  {{testimonialSection.render({
+    "testimonialData" : [
+      {      
+        "image" : "./image/home-3/user-circle-1.png", 
+        "userName" : "John Doe",       
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",
+        "userPosition" : "Product Designer"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      {
+        "image" : "./image/home-3/user-circle-3.png",       
+        "userName" : "Talan Bergson",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CEO, Greener"        
+      }
+    ]
+
+  })}}
+  <!--/ .Testimonial Area -->
+
+  <!-- contact Area -->
+  {{contact.render()}}
+  <!--/ .contact Area -->
+
+
+
+  <!-- Footer Area -->
+  {{footer.render()}}
+  <!--/ .Footer Area -->
+
+{% endblock %}

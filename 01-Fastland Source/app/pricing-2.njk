@@ -1,0 +1,122 @@
+{% extends "template.njk" %}
+
+{# <!-- Page Section Import Here -->  #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import "sections/innerpage/_pricing-table.njk" as pricingTable %}
+{% import "sections/innerpage/_faqs.njk" as fAqs %}
+{% import 'components/footer/_footer-inner-1.njk' as footer%}
+
+{% block main %}
+  <!-- Clean The Code And Hop in -->
+
+<!-- Header Area -->
+{{Header.render({
+"hideMegamenu": false,
+"megamenuPosition" : "left menu-block-3",
+"additional_header_class": "site-header--menu-right mt-2 mb-4 mt-lg-0 mb-lg-0 bg-default",
+"absolute_header": false,
+"container_fluid": false,
+"sticky_header": false,
+"mobile_sticky": false,
+"menu_wrapper_class" : "ms-5 menu-sep-right",
+"header_button" : true,
+"header_button_text" : "Purchase",
+"header_button_class" : "btn btn-electric-violet-2 btn--header-inner rounded-50 text-white shadow--electric-violet-2-4
+ms-2 d-none d-lg-block"
+
+})}}
+<!--/ .Header Area -->
+
+  <!-- pricingTable Area -->
+  {{pricingTable.TableTwo({
+    "testimonialData" : [
+      {      
+        "image" : "./image/home-3/user-circle-1.png", 
+        "userName" : "John Doe",       
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",
+        "userPosition" : "Product Designer"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      { 
+        "image" : "./image/home-3/user-circle-2.png", 
+        "userName" : "Tiana Dokidis",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CMO, Dotcorn"        
+      },
+      {
+        "image" : "./image/home-3/user-circle-3.png",       
+        "userName" : "Talan Bergson",
+        "description":"There are many variations passages of Lorem lpsum available, but the majority have suffered alteration in some form, by injected or randomised.",       
+        "userPosition" : "CEO, Greener"        
+      }
+    ]
+
+  })}}
+  <!--/ .pricingTable Area -->
+
+  <!-- fAqs Area -->
+  {{fAqs.render({
+    "faqsData" : [
+      {
+        "title" : "Can I use Fastland for my clients?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      },
+      {
+        "title" : "Do I get free updates?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      },
+      {
+        "title" : "Does it work with WordPress?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      },
+      {
+        "title" : "Will you provide support?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      },
+      {
+        "title" : "Can I use Fastland for my clients?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      },
+      {
+        "title" : "Can I use Metsys for my clients?",
+        "content" : "With lots of unique blocks, you can easily build a page without coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre."
+      }
+    ]
+  
+  })}}
+  <!--/ .fAqs Area -->
+
+  <!-- Footer Area -->
+  {{footer.render()}}
+  <!--/ .Footer Area -->
+
+{% endblock %}

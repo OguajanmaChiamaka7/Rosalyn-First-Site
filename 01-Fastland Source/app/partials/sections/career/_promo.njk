@@ -1,0 +1,29 @@
+{% macro render(promo) %}
+{% import "components/_newsletter.njk" as newsletterOne %}
+<div class="promo-area pormo--inner-career">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-7 col-md-9">
+                <div class="promo-content">
+                    <div class="section-title text-center">
+                        <h2 class="section-title__heading">Interested in joining our team?</h2>
+                    </div>
+                    <div class="newsletter--inner-career">
+                        <form action="./">
+                            <div class="form-control">
+                                <i class="fa fa-search"></i>
+                                <input type="text" placeholder="Type job title or keyword">
+                            </div>
+                            <button class="btn btn-primary rounded-50 text-white">Search</button>
+                        </form>
+                    </div>
+                    <div class="section-title text-center">
+                        <p class="section-title__description" >You can also browse the open roles below to find what you are looking for</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

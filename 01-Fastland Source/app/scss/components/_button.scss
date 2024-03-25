@@ -1,0 +1,190 @@
+.btn {
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    min-width: 137px;
+    line-height: 28px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &.btn--medium {
+        width: 137px;
+        height: 50px;
+    }
+    &.btn--medium-2 {
+        width: 142px;
+        height: 56px;
+    }
+    &.btn--medium-3 {
+        width: 164px;
+        height: 56px;
+    }
+    &.btn--medium-4 {
+        min-width: 158px;
+        height: 42px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 22px;
+    }
+    &.btn--medium-5 {
+        min-width: 177px;
+        height: 56px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: normal;
+        line-height: 22px;
+    }
+
+    &.btn--lg {
+        min-width: 172px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    &.btn--lg-2 {
+        min-width: 180px;
+        height: 56px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    &.btn--lg-3 {
+        min-width: 183px;
+        height: 56px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    &.btn--xl {
+        min-width: 194px;
+        height: 45px;
+    }
+
+    &.btn--xxl {
+        min-width: 194px;
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    &.btn--190 {
+        width: 190px;
+        height: 60px;
+    }
+    &.btn--btn-header-7 {
+        min-width: 172px;
+        height: 42px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: normal;
+    }
+    &.btn--header-inner {
+        min-width: 125px;
+        height: 42px;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: normal;
+    }
+
+    &.squer--btn {
+        min-width: 44px;
+        height: 45px;
+        border-radius: 10px;
+        background-color: rgba($shark, 0.3);
+        color: $white;
+    }
+
+    &.with-icon {
+        i {
+            margin-left: -5px;
+            margin-right: 3px;
+            font-size: 16px;
+            margin-top: 2px;
+        }
+    }
+    &.with-icon-2 {
+        i {
+            margin-left: -5px;
+            margin-right: 7px;
+            font-size: 21px;
+        }
+    }
+
+    &-reset {
+        background: transparent;
+        border: 0;
+    }
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-link {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+
+    &--2 {
+        min-width: fit-content !important;
+        width: fit-content;
+        padding: 20px 0 !important;
+        height: 30px;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left !important;
+        display: inline-flex;
+        align-items: center;
+
+        &.with--line {
+            border-bottom: 2px solid var(--border-color);
+
+            &.border--primary {
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+// Bookmark
+
+.bookmark-button {
+    &:before {
+        content: "\f02e";
+        color: inherit;
+        font-size: inherit;
+        font-weight: 400;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+    }
+
+    &:hover,
+    &.clicked {
+        &:before {
+            font-weight: 900;
+            color: green;
+        }
+    }
+}
+
+@each $color, $value in $btn-colors {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+@each $color, $value in $btn-colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}

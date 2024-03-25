@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fastland - Documentation</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <!-- <link rel="stylesheet" href="plugins/plugin.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/prismJs/prism.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden " id="top">
+    <header class="doc-topbar shadow-sm">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">
+            <img src="./image/png/company-logo.png" alt="">
+          </a>
+          <a href="" class="buy-button btn btn-primary ml-auto ml-lg-4 mr-3 mr-md-4 mr-lg-0 order-lg-3">Buy Fastland</a>
+          <button class="mobile-toggle-btn" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="doc-sidebar--left collapse col-lg-3 col-xl-2 pt-25" id="sidebar">
+          <!-- 
+  <div class="sidebar-brand-block">
+    <a href=""><img src="./image/png/company-logo.png" alt=""></a>
+  </div> -->
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Getting Started
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="index.html">Introduction</a></li>
+              <li><a href="file-structure.html">File Structure</a></li>
+              <li><a href="gulp.html">Gulp</a></li>
+              <!-- <li><a href="credits.html">Credits</a></li> -->
+              <li><a href="update.html">Update</a></li>
+              <li><a href="changelog.html">Change Log</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Theme Intro
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="reboot.html">Reboot</a></li>
+              <li><a href="page-default.html">Page Defaults</a></li>
+              
+            </ul>
+          </div>
+          <div class="sidebar-menu-group pt--40 pt-lg--50">
+            <h3 class="menu-title">
+              How-To Guides
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="changing-header.html">Change Header</a></li>
+             
+              <li><a href="menu-sticky.html">Make Menu Sticky</a></li>
+              <li><a href="changing-logo.html">Change Site/Brand Logo</a></li>
+              <li><a href="editing-color-scheme.html">Edit the Color Scheme</a></li>
+              <li><a href="customizing-fonts.html">Linking Google Fonts</a></li>
+              <li><a href="starter-template.html">Starter Template Code</a></li>
+              <li><a href="#">Theme Mode Guide (coming soon)</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Javascript and Plugins
+            </h3>
+            <ul class="sidebar-menu">
+              <li><a href="aos-doc.html">Animate On Scroll</a></li>
+              <li><a href="counter-doc.html">Counters</a></li>
+              <li><a href="slick-doc.html">Slick (Slider)</a></li>
+              <li><a href="isotope-doc.html">Isotope</a></li>
+            </ul>
+          </div>
+        
+        </aside>
+        <div class="col-lg-9 col-xl-10 offset-xl-2 offset-lg-3">
+          <div class="row justify-content-around">
+            <div class="col-lg-10 col-xl-8 py-4 py-md-5">
+              <div class="doc-breadcrumb">
+                <h2 class="title">Edit the Color Scheme</h2>
+                <p>You can easily transform the color scheme of your site using SCSS.</p>
+              </div>
+              <hr class="my-4 my-md-5">
+              <article class="mt-4 mt-md-12" id="color-scheme">
+                <h2 class="h3 mb-8">Editing the default color scheme variables</h2>
+                <p>Editing the default color scheme variables will change the colors in main.css and result the theme colors to change. Follow below instructions for changing heading titles, paragraph texts, buttons and theme base colors.</p>
+                <ol class="pl-8">
+                  <li>
+                    <h6>Open _colors.scss file</h6>
+                    <p>The <code>_colors.scss</code> file is located in the <code>app/scss/bs-theming</code> directory of the theme package.</p>
+                  </li>
+                  <!-- 3 -->
+                  <li>
+                    <h6>Generate color classes(i.e, text-blue, bg-blue, border-blue) for your new color variables by adding the new variables in the <code>$theme-colors</code> array inside the <code>_colors.scss</code> file. </h6>
+                    <pre class="  language-scss mt-9"><code class="  language-scss">//-->Currently All Available Colors
+  
+$white              :#fff;
+$black              :#000;
+$green              :green;
+$link-water         :#f2f5fb;
+$purple-heart       :#6a26da;
+$blue-ribbon        :#2b59ff;
+$blue-ribbon-2      :#0041ff;
+$green-2            :#22cc74;
+$tree-poppy         :#ff971d;
+$ebony-clay         :#25373f ;
+$golden-tainoi      :#ffd166;
+$coral              :#ff8d52;
+$anakiwaap          :#a9d2ff;
+$silver             :#adadad;
+$java               :#15cda8;
+$java-2             :#1de2cf;
+$ice-cold           :#96f7d2;
+$radical-red        :#ff4057;
+$electric-violet    :#5338fc;
+$electric-violet-2  :#5034fc;
+$electric-violet-3  :#6001d3;
+$electric-violet-4  :#4f34fc;
+$oxford-blue        :#3b4656;
+$white-lilac        :#f8f9fc;
+$victoria           :#494ca2;
+$dodger-blue        :#0f89ff;
+$royal-blue         :#3e49f3;
+$blue               :#7984ee;
+$caribbean-green    :#0cd68a;
+$gorse              :#fee856;
+$yellow             :#fcdc00;
+$yellow-2           :#ffce3e;
+$yellow-3           :#ffd700;
+$shark              :#262729;
+$athens-gray        :#F3F4F6;
+$primary            :#ff5722;
+$readical-red       :#fd346e;
+$flamingo           :#ef4339;
+$egg-blue           :#0abfbc;
+$jumbo              :#828288;
+$orange             :#ff5200;
+$torch-red          :#ff1e38;
+$watermelon         :#fd5284;
+$niagara            :#099a97;
+$bittersweet        :#ff7272;
+$lavender           :#be79df;
+$boulder            :#747474;
+$half-baked         :#82c4c3;
+$cod-gray           :#161616;
+$secondary          : $electric-violet-2;
+</code></pre>
+                  
+              </article>
+            </div>
+            <div class="col-xl-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="plugins/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/prismJs/prism.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

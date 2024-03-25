@@ -1,0 +1,234 @@
+.about-us-section--l4 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    @include desktops {
+        padding-top: 247px;
+        padding-bottom: 129px;
+    }
+
+    .section-title {
+        &__sub-heading {
+            margin-bottom: 15px;
+        }
+
+        &__heading {
+            margin-bottom: 25px !important;
+        }
+
+        &__description {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about-us-counter--l4 {
+        margin-top: 50px;
+        @include desktops {
+            margin-right: 70px;
+        }
+    }
+}
+
+.about-us__image-group-l4 {
+    position: relative;
+    width: 80%;
+    margin-bottom: 125px;
+
+    // margin-left: -10%;
+    @include large-desktops {
+        width: 100%;
+        margin-top: -135px;
+    }
+
+    &__img-1 {
+        position: absolute;
+        right: -25%;
+        bottom: -28%;
+        width: 84%;
+    }
+}
+
+.about-us-right {
+    @include large-desktops {
+        margin-top: -95px;
+    }
+}
+
+.about-us-section--l5,
+.video-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 63px;
+    }
+
+    @include desktops {
+        padding-top: 125px;
+        padding-bottom: 130px;
+    }
+
+    .section-title {
+        margin-bottom: 42px;
+
+        &__sub-heading {
+            margin-bottom: 22px;
+        }
+
+        &__heading {
+            margin-bottom: 15px !important;
+        }
+    }
+
+    .about-us-right {
+        margin-top: 0;
+        @include desktops {
+            margin-left: 10px;
+        }
+        @include large-desktops {
+            margin-left: 70px;
+        }
+
+        @include extra-large-desktops {
+            margin-left: 0;
+            margin-right: 50px;
+        }
+    }
+
+    .about-us__image {
+        position: relative;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        @include desktops {
+            margin-bottom: 0;
+        }
+    }
+}
+.about-us__image,
+.video-box {
+    position: relative;
+    .video-btn {
+        min-width: 96px;
+        max-width: 96px;
+        min-height: 96px;
+        max-height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+}
+
+/*
+  Home 7
+---------------------------------*/
+
+.about-us-section--l7 {
+    padding-top: 60px;
+
+    @include tablet {
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+
+    @include desktops {
+        padding-top: 125px;
+        padding-bottom: 130px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+        @include desktops {
+            margin-bottom: 72px;
+        }
+
+        &__sub-heading {
+            margin-bottom: 22px;
+        }
+
+        &__heading {
+            padding-bottom: 35px !important;
+            margin-bottom: 40px !important;
+        }
+    }
+
+    .about-us-left {
+        margin-top: 0;
+        margin-bottom: 30px;
+        @include desktops {
+            margin-bottom: 0;
+        }
+        @include large-desktops {
+            margin-right: 50px;
+        }
+    }
+}
+
+.about-us-area--l9 {
+    padding-top: 60px;
+    @include tablet {
+        padding-top: 80px;
+    }
+    @include desktops {
+        padding-top: 130px;
+    }
+    .about-us-img {
+        z-index: 1;
+        border-radius: 5px;
+        position: relative;
+        @include desktops{
+            width: 107%;
+        }
+    }
+    .about-us-content-box {
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        z-index: 0;
+        @include mobile-lg{
+            padding-left: 80px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-right: 80px;
+        }
+        @include desktops{
+            padding-left: 50px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-right: 30px;
+        }
+        @include large-desktops {
+            padding-left: 110px;
+            padding-top: 145px;
+            padding-bottom: 145px;
+            padding-right: 90px;
+        }
+    }
+    .section-title{
+        &__heading{
+            color: $shark;
+        }
+        &__description{
+            color: rgba($shark, 0.7);
+            @include tablet{
+                margin-right: 10px;
+            }
+            @include desktops{
+                margin-right: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{% extends "template.njk" %}
+
+{#
+<!-- Page Section Import Here --> #}
+{% import 'components/Header/_header.njk' as Header %}
+{% import 'components/footer/_footer-inner-1.njk' as footer%}
+
+{% block main %}
+<!-- Clean The Code And Hop in -->
+
+  <!-- Header Area -->
+  {{Header.render({
+    "hideMegamenu": false,
+    "additional_header_class": "site-header--menu-right mt-2 mb-4 mt-lg-0 mb-lg-0 bg-default",
+   "absolute_header": false,
+"container_fluid": false,
+"sticky_header": false,
+    "mobile_sticky": false,
+    "menu_wrapper_class" : "ms-5 menu-sep-right",
+    "header_button" : true,
+    "header_button_text" : "Purchase",
+    "header_button_class" : "btn btn-electric-violet-2 btn--header-inner rounded-50 text-white shadow--electric-violet-2-4 ms-2 d-none d-lg-block"
+
+    })}}
+  <!--/ .Header Area -->
+
+<div class="career-details bg-default-3 border-bottom border-default-color-6">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-10">
+        <div class="card card-jobs flex-row justify-content-between align-items-center flex-wrap text-center text-md-start">
+          <div class="card-jobs__content">
+            <h2 class="card-jobs__content__heading">Product Manager</h2>
+            <ul class="card-jobs__content__details list-unstyled d-flex align-items-center flex-wrap justify-content-center justify-md-content-start">
+              <li><a href="#"><i class="fa fa-map-marker-alt text-electric-violet-2"></i> Remote</a></li>
+              <li><a href="#"><i class="fa fa-briefcase text-electric-violet-2"></i> Full-time</a></li>
+              <li><a href="#"><i class="fa fa-clock text-electric-violet-2"></i> Posted 8 hours ago</a></li>
+            </ul>
+          </div>
+          <div class="card-job__btn mx-auto mx-md-0 mt-2 mt-md-0">
+            <button class="btn btn-primary shadow--primary-6 rounded-50 text-white d-block my-2">Apply</button>
+            <button class="btn btn-outline-primary rounded-50 d-block my-2">Share</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-8 col-lg-10">
+        <div class="career-deatils__content">
+          <div class="career-details-box career-details-box--1">
+            <h4 class="career-deatils__content__heading">About the job</h4>
+            <p class="career-deatils__content__text">At Fastland Inc, we put our users first. The world is always
+              changing
+              so we need Product Managers who are continuously adapting and excited to work on products that affect
+              millions of people every day.</p>
+            <p class="career-deatils__content__text">In this role, you will work cross-functionally to guide products
+              from
+              conception to launch by connecting the technical and business worlds. You can break down complex problems
+              into steps that drive product development at lightning speed.</p>
+          </div>
+          <div class="career-details-box career-details-box--2">
+            <h4 class="career-deatils__content__heading">Responsibilities</h4>
+            <p class="career-deatils__content__text">A Senior Data Engineer provides technical and delivery leadership
+              for a team of developers working on data integration and processing projects. This role will work with
+              stakeholders and other developers to design and implement technical data solutions for the business in a
+              way that balances quality, maintainability cost, and time.</p>
+            <ul class="career-deatils__content__list">
+              <li>Understand the cloud ecosystem, markets, competition and user requirements in depth.</li>
+              <li>Launch new products and features, test their performance and iterate quickly.</li>
+              <li>Work collaboratively with Engineering, Marketing, Legal and UX teams on cutting-edge technologies.
+              </li>
+              <li>Develop innovative solutions to some of the world’s hardest problems by collaborating as needed across
+                regions, product areas and functions.</li>
+              <li>Launch new products and features, test their performance and iterate quickly.</li>
+            </ul>
+          </div>
+          <div class="career-details-box career-details-box--3">
+            <h4 class="career-deatils__content__heading">Skills & Qualification</h4>
+            <ul class="career-deatils__content__list">
+              <li>Experience in one or more of the following: cloud infrastructure, big data, security and privacy, development and operations or artificial intelligence/machine learning.</li>
+              <li>Experience managing day-to-day technical and design direction.</li>
+              <li>Knowledge of multiple functional areas such as product management, engineering, UX/UI, sales, customer support, finance or marketing.
+              </li>
+              <li>Ability to influence multiple stakeholders without direct authority.</li>
+            </ul>
+          </div>
+          <div class="career-details-box career-details-box--4">
+            <h4 class="career-deatils__content__heading">Whats in it for you</h4>
+            <ul class="career-deatils__content__list">
+              <li>A remote friendly office with flexible hours - for this role we will consider all applications from those based in Canada with the option to work from our Vancouver office.</li>
+              <li>4 weeks vacation plus Christmas Holiday Closure - you're entitled to the week of Christmas off with pay through to and including Jan 1st.</li>
+              <li>12 Personal Wellness Days (This includes: Sick days, moving days, personal days, etc)
+              </li>
+              <li>One day every 2 weeks of dedicated professional development time</li>
+              <li>A paid day off for your birthday</li>
+            </ul>
+          </div>
+          <div class="career-details-box career-details-box--5">
+            <h4 class="career-deatils__content__heading">How to apply</h4>
+            <p class="career-deatils__content__text">At Fastland we celebrate everyone and their multiple intersecting identities. We believe that a panorama of experience allows us to make better decisions together and inspires so that we can better serve our customers and community. Our goal is for metsys user to feel deeply connected to their team through mutual value, respect, and belief.</p>
+            <a class="btn btn-primary shadow--primary-6 btn--lg-2 text-white rounded-50 mt-4" href="#">Apply for this position</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Area -->
+{{footer.render()}}
+<!--/ .Footer Area -->
+
+{% endblock %}

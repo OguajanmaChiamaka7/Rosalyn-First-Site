@@ -1,0 +1,45 @@
+{% macro render(options) %}
+    {% import "components/_widgets.njk" as Widget %}
+    <div class="service-area service-area--l1 border-top border-default-color-2 bg-default">
+    <div class="service-shape service-shape--l1">
+        <img class="w-100" src="./image/home-1/services-shape-l1.png" alt="">
+    </div>
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row align-items-end justify-content-center">
+                <div class="col-lg-7 col-md-12 col-xs-10">
+                    <div class="section-title text-center text-md-start" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+                        <h2 class="section-title__heading">Your business needs a<br class="d-none d-xs-block d-lg-none d-xl-block"> better shape today.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-xs-10">
+                    <div class="section-title  text-center text-md-start" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
+                        <p class="section-title__description">Create custom landing pages with <br class="d-none d-xs-block"> Fastland that converts more
+                        visitors<br class="d-none d-sm-block"> than any website. Easy & Fast.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!--/ .Section Title -->
+            <div class="service-items">
+            <div class="row justify-content-center justify-content-md-start">
+                <!-- Single Service -->
+                {% for data in options.serviceData %}
+                    <div class="col-lg-4 col-xs-6 col-10">
+                        {{Widget.service(
+                            {
+                            "shapeColor"    : data.shapeColor, 
+                            "image"         : data.image, 
+                            "heading"       : data.heading, 
+                            "content"       : data.content
+                            }
+                        )}}
+                    </div>
+                {% endfor %}
+
+                <!--/ .Single Service -->
+            </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

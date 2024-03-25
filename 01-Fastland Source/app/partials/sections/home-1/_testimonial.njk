@@ -1,0 +1,21 @@
+{% macro render(options) %}
+    {% import "components/_widgets.njk" as widget %}
+    <div class="testimonial-area bg-default">
+        <div class="container">
+            <div class="testimonial-slider testimonial-slider--l1" data-aos="fade-up" data-aos-duration="300" data-aos-once="true">
+                {% for data in options.testimonialData %}
+                <div class="testimonial-slider__single-slide">
+                    {{widget.testimonialOne(
+                        {
+                        "reviewStar" : data.reviewStar, 
+                        "image" : data.image, 
+                        "userName" : data.userName, 
+                        "userCat" : data.userCat
+                        }
+                    )}}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,270 @@
+/*
+  Home 1 : Counter Section
+------------------------------------------*/
+.counter-widgets-wrapper {
+    padding-top: 45px;
+    padding-bottom: 20px;
+
+    @include tablet {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    @include desktops {
+        padding-top: 125px;
+        padding-bottom: 111px;
+    }
+}
+
+.counter-widgets {
+    box-shadow: 0 24px 50px rgba(96, 1, 211, 0.2);
+    border-radius: 15px;
+    background-color: rgba(80, 52, 252, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    &__single {
+        border: none !important;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+        flex: 0 0 100%;
+
+        @include mobile {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+
+        @include tablet {
+            padding: 0 45px;
+            width: calc(33.3333% - 10px);
+            flex: 0 0 calc(33.3333% - 10px);
+        }
+
+        @include desktops {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        @include extra-large-desktops {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include mobile-xs {
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 90px;
+                background-color: rgba($white, 0.1);
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                content: "";
+                background-color: transparent;
+            }
+            @include tablet {
+                &::before {
+                    content: "";
+                    background-color: rgba($white, 0.1);
+                }
+            }
+        }
+        &:last-child {
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 68px;
+                background-color: transparent;
+            }
+        }
+
+        .counter-content {
+            &__heading {
+                font-size: 28px;
+                font-weight: 500;
+                letter-spacing: normal;
+                line-height: 1.4761;
+                @include tablet{
+                    font-size: 32px;
+                }
+                @include desktops{
+                    font-size: 35px;
+                }
+
+                @include large-desktops {
+                    font-size: 42px;
+                }
+            }
+
+            &__text {
+                font-size: 13px;
+                font-weight: 400;
+                letter-spacing: normal;
+                line-height: 30px;
+                margin-bottom: 0;
+                @include tablet {
+                    font-size: 16px;
+                }
+                @include desktops {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/*
+  Home 4 : Counter Section
+------------------------------------------*/
+
+.about-us-counter--l4 {
+    .counter-widgets {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        text-align: inherit;
+        &__single {
+            @include mobile {
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 67px;
+                    background-color: rgba(#000000, 0.1);
+                }
+            }
+            &:nth-child(2) {
+                &:before {
+                    content: "";
+                    background-color: transparent;
+                }
+                @include tablet {
+                    &:before {
+                        content: "";
+                        width: 2px;
+                        height: 67px;
+                        background-color: rgba(#000000, 0.1);
+                    }
+                }
+            }
+            &:last-child {
+                &:before {
+                    content: "";
+                    background-color: transparent;
+                }
+            }
+            padding: 0;
+        }
+    }
+
+    .counter-content {
+        &__heading {
+            color: $torch-red;
+            font-size: 45px;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        &__text {
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 1.8666666;
+        }
+    }
+}
+
+/*
+  Home 7 : About us
+------------------------------------------*/
+
+.about-us-section--l7 {
+    .counter-widgets__single {
+        position: relative;
+        &::before {
+            content: "";
+            background-color: transparent;
+        }
+        @include brk-point(480px) {
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 68px;
+                background-color: $readical-red;
+            }
+        }
+        @include mobile-lg {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+        @include desktops {
+            width: 33.3333%;
+            flex: 0 0 33.3333%;
+        }
+
+        &:nth-child(2) {
+            &::before {
+                background-color: transparent;
+            }
+            @include desktops {
+                &::before {
+                    background-color: $readical-red;
+                }
+            }
+        }
+
+        &:last-child {
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 68px;
+                background-color: transparent;
+            }
+        }
+        .counter-content {
+            &__heading {
+                color: $readical-red;
+                font-size: 32px;
+                font-weight: 500;
+                letter-spacing: normal;
+                line-height: 42px;
+            }
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: normal;
+                line-height: 32px;
+            }
+        }
+    }
+}
